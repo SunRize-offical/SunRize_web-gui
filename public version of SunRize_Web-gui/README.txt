@@ -12,5 +12,4 @@ i.html is also not meant to be changed this is the about the project tab in the 
 
 4
 
-index and oindex has to  be configured by the new user files arent in the same location for every one like for me the files are at /network/nas1/files/htmlwebtest/ for u they are in different location u need to set the correct location for the files 
-
+u can configure ur network and device names and saved passwords tab from pass.html(passwords) network.html(network and device names there) oindex.html(the control panel server opening menu) and status.html(for ur servers status)
