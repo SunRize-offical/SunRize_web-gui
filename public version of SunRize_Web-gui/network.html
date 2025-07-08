@@ -1,0 +1,69 @@
+<style>
+  body {
+    background-color: #000000;
+    color: #f5f5f5;
+    font-family: sans-serif;
+    padding: 2rem;
+  }
+
+  .status {
+    color: #ffff00; /* yellow */
+    font-weight: bold;
+  }
+
+  .ip {
+    color: #00aaff; /* blue */
+    font-family: monospace;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    color: #00ff88;
+    margin-top: 2rem;
+  }
+</style>
+
+<!-- Just the Section Now -->
+<div id="servers">
+  <h2>Server IPs</h2>
+  <ul>
+    <li>device1 → <span class="ip">0.0.0.0</span></li>
+    <li>device2 → <span class="ip">0.0.0.0</span></li>
+    <li>device3 → <span class="ip">0.0.0.0</span></li>
+    <li>device4 → <span class="ip">0.0.0.0</span></li>
+    <li>device5 → <span class="ip">0.0.0.0</span></li>
+    <li>device6 → <span class="ip">0.0.0.0</span></li>
+    <li>NON SERVER=</li>
+    <li>ur main pc/laptop → <span class="ip">0.0.0.0</span></li>
+  </ul>
+</div>
+
+
+<button onclick="toggleRouter()">Toggle Router Settings</button>
+
+<div id="router-settings" style="display:none; margin-top:1rem;">
+  <h3>Router Settings</h3>
+  <ul>
+    <li>IP Address → <span class="ip">0.0.0.0</span></li>
+    <li>Admin Login → <span class="status">admin</span></li>
+    <li>DHCP Range → disable 0.0.0.0 – 0.0.0.0</li>
+    <li>Firewall → disable</li>
+    <li>Port Forwarding → disable</li>
+    <li>URL → <a href="https:0.0.0.0" target="_blank">Open Router Config</a></li>
+  </ul>
+</div>
+
+<script>
+  function toggleRouter() {
+    const section = document.getElementById('router-settings');
+    section.style.display = section.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
+
+
+
+<h4> this was first a tab in #control panel in update V0.0.5-beta now in V0.0.6-beta it was added to the side panel </h4>
+
